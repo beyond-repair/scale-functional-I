@@ -9,14 +9,16 @@ I = Perimeter / sqrt(Area). beta_I = dI / d ln w. Target 0.08 not used.
 
 | w | Area | Perimeter | I | beta_I |
 |---|------|-----------|---|--------|
-| 1 | 133 | 72 | 6.243 | -0.62 |
-| 2 | 138 | 70 | 5.959 | -0.65 |
-| 3 | 143 | 68 | 5.686 | -0.69 |
-| 4 | 148 | 66 | 5.425 | -0.72 |
-| 5 | 153 | 64 | 5.174 | -0.76 |
-| 6 | 158 | 62 | 4.932 | -0.80 |
-| 7 | 163 | 60 | 4.700 | -0.84 |
-| 8 | 168 | 58 | 4.475 | -0.86 |
+| 1 | 133 | 72 | 6.2432 | n/a (no previous w) |
+| 2 | 138 | 70 | 5.9588 | -0.4103 |
+| 3 | 143 | 68 | 5.6864 | -0.6717 |
+| 4 | 148 | 66 | 5.4252 | -0.9082 |
+| 5 | 153 | 64 | 5.1741 | -1.1252 |
+| 6 | 158 | 62 | 4.9325 | -1.3253 |
+| 7 | 163 | 60 | 4.6996 | -1.5108 |
+| 8 | 168 | 58 | 4.4748 | -1.6832 |
+
+Table beta_I values are the finite difference `(I(w)-I(w-1))/ln(w/(w-1))` printed by `scale_functional.py` on head `23c00dd701f7c2178ccc4bc5d1a7ee58075d3656`. The previous column (about -0.62 to -0.86) did not match that definition. Sign and absence of a zero are unchanged.
 
 beta_I zeros: none.
 
